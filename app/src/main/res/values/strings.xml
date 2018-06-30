@@ -10,6 +10,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="phonestring">Phone</string>
     <string name="picturestring">Picture</string>
-    <string name="creator_namestring">Creator Name</string>
-    <string name="numberstring">Number</string>
+    <string name="namestring">Name</string>
+    <string name="phonenumberstring">Phone Number</string>
+    <string name="home_numberstring">Home number</string>
 </resources>
