@@ -13,6 +13,8 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context mContext;
     private ArrayList<Item> mList;
+    Item item1 = new Item("SHa", "010111111", "031111111");
+    //mList.add(0, item1);
 
     public MyAdapter(Context context, ArrayList<Item> myList) {
         mContext = context;
