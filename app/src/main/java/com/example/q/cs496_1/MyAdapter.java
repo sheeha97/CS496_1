@@ -13,13 +13,13 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context mContext;
     private ArrayList<Item> mList;
-    Item item1 = new Item("SHa", "010111111", "031111111");
-    //mList.add(0, item1);
+    //Item item1 = new Item("Sha", "010111111", "031111111");
 
     public MyAdapter(Context context, ArrayList<Item> myList) {
         mContext = context;
         mList = myList;
     }
+
 
     @NonNull
     @Override
@@ -30,6 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int position) {
+        //mList.add(item1);
         Item currentItem = mList.get(position);
 
         String name = currentItem.getName();
@@ -44,6 +45,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public int getItemCount() {
         return mList.size();
+
     }
 
     public class  MyViewHolder extends RecyclerView.ViewHolder {
@@ -56,7 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             mTextViewName = itemView.findViewById(R.id.text_view_name);
             mTextViewPhone = itemView.findViewById(R.id.text_view_phone_number);
             mTextViewHome = itemView.findViewById(R.id.text_view_home_number);
-
+            //mList.add(item1);
         }
     }
 }
